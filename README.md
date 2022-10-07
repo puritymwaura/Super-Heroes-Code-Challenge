@@ -21,7 +21,7 @@ https://github.com/Kaburu12/Super-Heroes-Code-Challenge.git
 
 ## Technology-Used
 
-Ruby on Rails
+Ruby on Rails , 
 SQLite3
 
 ## Known-Bugs
