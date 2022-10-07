@@ -20,9 +20,9 @@ flight = Power.create(name: "flight",description: "gives the wielder the ability
 
 
 #Creation of HeroPowers data to the database
-HeroPower.create(strength: "strong", hero_id:hero1.id, power_id:flight.id)
-HeroPower.create(strength: "weak", hero_id:hero2.id, power_id:diving.id)
-HeroPower.create(strength: "average", hero_id:hero3.id, power_id:flight.id)
-HeroPower.create(strength: "strong", hero_id:hero4.id, power_id:diving.id)
+HeroPower.create("strength": "strong", "hero_id":hero1.id, "power_id":flight.id)
+HeroPower.create("strength": "weak", "hero_id":hero2.id, "power_id":diving.id)
+HeroPower.create("strength": "average", "hero_id":hero3.id, "power_id":flight.id)
+HeroPower.create("strength": "strong", "hero_id":hero4.id, "power_id":diving.id)
 
 puts '....✅ Mike done seeding data'

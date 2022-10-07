@@ -1,4 +1,4 @@
-class HeroesController < ApplicationController
+class HerosController < ApplicationController
 
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
@@ -9,7 +9,7 @@ class HeroesController < ApplicationController
 
     def show
         hero = Hero.find(params[:id])
-        render json: hero, serializer: HeroSerializer
+        render json: hero,serializer: HeroSerializer
     end
 
     private 
