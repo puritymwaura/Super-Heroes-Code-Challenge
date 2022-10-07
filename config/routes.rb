@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :hero_powers,only:[:create]
 
-  resources :heros,only:[:index,:show] do
+  resources :heroes,only:[:index,:show] do
     resources :powers, only: [:index]
   end
   
