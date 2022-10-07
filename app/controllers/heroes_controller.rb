@@ -1,4 +1,4 @@
-class HerosController < ApplicationController
+class HeroesController < ApplicationController
 
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 

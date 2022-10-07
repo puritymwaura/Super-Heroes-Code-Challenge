@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts '🌱 Mike seeding data....'
+
+#Creation of Heroes data to the database
+hero1 = Hero.create(name: "Mike",super_name:"Squash Man")
+hero2 = Hero.create(name: "Kamala Khan", super_name: "Ms. Marvel")
+hero3 = Hero.create(name: "Doreen Green", super_name: "Squirrel Girl")
+hero4 = Hero.create(name: "Gwen Stacy", super_name: "Spider-Gwen")
+
+#Creation of Powers data to the database
+diving = Power.create(name: "super strength",description: "gives the wielder super-human strengths")
+flight = Power.create(name: "flight",description: "gives the wielder the ability to fly through the skies at supersonic speed")
+
+
+#Creation of HeroPowers data to the database
+HeroPower.create(strength: "strong", hero_id:hero1.id, power_id:flight.id)
+HeroPower.create(strength: "weak", hero_id:hero2.id, power_id:diving.id)
+HeroPower.create(strength: "average", hero_id:hero3.id, power_id:flight.id)
+HeroPower.create(strength: "strong", hero_id:hero4.id, power_id:diving.id)
+
+puts '....✅ Mike done seeding data'
