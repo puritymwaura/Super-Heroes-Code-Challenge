@@ -4,12 +4,12 @@ class HerosController < ApplicationController
 
     def index
         heroes = Hero.all
-        render json: heroes
+        render json: heroes , only:[:id, :name, :super_name]
     end
 
     def show
         hero = Hero.find(params[:id])
-        render json: hero,serializer: HeroSerializer
+        render json: hero, only:[:id, :name,:super_name], include: :powers
     end
 
     private 
