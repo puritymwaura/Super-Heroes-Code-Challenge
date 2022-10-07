@@ -12,8 +12,8 @@ The code challenge is based on Ruby on Rails ,from the creation of Rails API,per
  2)Git cloning the repository . 
  3)install the API dependancies by running `bundle install`. 
  4)Then run `rails db:migrate db:seed` for the migrations to run and seed data to database.
- 4)After the all the dependancies have been installed run `rails s` or `rails server`to start the server.
- 5) Consume the API using the Chrome browser or Postman which is the best choice for performing all the CRUD operations required.
+ 4)After all the dependancies have been installed run `rails s` or `rails server`to start the server.
+ 5) Consume the API using the Chrome browser or Postman which is considered the best choice for performing all the CRUD operations required.
 
 ## GitHub-Repo-Link
 
@@ -22,6 +22,7 @@ https://github.com/Kaburu12/Super-Heroes-Code-Challenge.git
 ## Technology-Used
 
 Ruby on Rails
+SQLite3
 
 ## Known-Bugs
 The code challenge works as per the deliverables.
